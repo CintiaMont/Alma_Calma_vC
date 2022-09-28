@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <main>
+        <div class="box box1">Alma Calma</div>
+        <div class="box box2">
+            <button class="boton">Yoga</button>
+            <button class="boton">Astrología</button>
+            <button class="boton">Nosotras</button>
+            <button class="boton">Contacto</button>
+        </div>
+            <form id="contact">
+                <h3>Deja tu mensaje</h3>
+                <h4>Contáctate con nosotras</h4>
+
+                <fieldset>
+                    <input id="name" placeholder="Nombre" type="text" name="name" required />
+                </fieldset>
+
+                <fieldset>
+                    <select name="categoria" id="categoria">
+                        <option value="">--Por favor elija una opción--</option>
+                        <option value="Yoga">Yoga</option>
+                        <option value="Astrología">Astrología</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <input data-testid="phone" id="phone" placeholder="Número de teléfono" type="tel" name="phone"
+                        required />
+                </fieldset>
+
+                <fieldset>
+                    <input data-testid="email" id="email" placeholder="Email" type="email" name="email" required />
+                </fieldset>
+
+                <fieldset>
+                    <textarea data-testid="message" id="message" placeholder="Escriba su mensaje aquí...."
+                        name="message"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <button type="submit" name="submit">Enviar</button>
+                </fieldset>
+            </form>
+    </main>
+    <footer class="box box5">2022 Tritech Todos los derechos reservados</footer>
+ </body>
+
+</html>
