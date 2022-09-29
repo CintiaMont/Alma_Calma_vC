@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #ffffff;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	display: grid;
+	min-height: 100vh;
+}
+img {
+	max-width: 50%;
+	max-height: 50%;
+	display: grid;
+}
+
+.contenedor {
+	width: 100%;
+	margin-right: auto;
+    margin-left: auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: "header header header"
+						 "contenido contenido sidebar"
+						 "widget-1 widget-2 sidebar"
+						 "footer footer footer";
+}
+.boton {
+	background: transparent;
+	border-color: transparent;
+	font-size: 16px;
+	border-radius: 20%;
+	color: #fff;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+.boton:hover {
+	background: #bdc3c7;
+	border-color: transparent;
+	background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+	background: linear-gradient(to right, #2c3e50, #bdc3c7);
+	text-decoration: none;
+  }
+
+.contenedor .header {
+	background: #3E5151;
+	background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
+	background: linear-gradient(to right, #DECBA4, #3E5151);
+	color: #3E5151;
+	border-radius: 0%;
+	padding: 1%;
+	display: grid;
+	text-align: left;
+	align-items: center;
+	justify-content: center;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr auto;
+	grid-area: header;
+}
+
+.contenedor .contenido {
+	margin-right: 0%;
+	margin-left: 14%;
+	background: #8a9c8a;
+	color: #fff;
+	grid-area: contenido;
+	padding: 5%;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor .sidebar {
+	background: #A1FFCE;
+	background: -webkit-linear-gradient(to right, #b9cfc9, #547270);
+	background: linear-gradient(to right, #b9cfc9, #547270);
+	margin-right: 10%;
+	margin-bottom: auto;
+	text-align: center;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-area: sidebar;
+}
+
+.contenedor .footer {
+	background: #3E5151;
+	background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
+	background: linear-gradient(to right, #DECBA4, #3E5151);
+	color: #fff;
+	padding: 1%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	grid-area: footer;
+}
+
+h3.under {
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "sidebar sidebar sidebar"
+						 "widget-1 widget-1 widget-2"
+						 "footer footer footer";
+	}
+}
