@@ -1,0 +1,38 @@
+.contenedor{
+    /*le decimos cómo se va a visualizar*/
+    display: grid;
+    /*le decimos cómo va a ser el template para nuestras columnas*/
+    /* grid-template-columns: 100px 100px 100px; /*le decimos que tiene tres columnas de 100 px cada una*/
+    /*grid-template-columns: 50% 30% 20% ; /*establezco con porcentaje las columnas*/
+    grid-template-columns: 3fr 9fr;
+    /*grid-template-columns: repeat(3, 1fr); /*esto significa, hacer 3 columnas de 1 fr, lo cual me va permitir agregar contenido 
+    y que se ajuste automáticamente*/
+    grid-template-rows: 2fr 8fr 2fr;    
+    column-gap: 1px; 
+    row-gap: 1px;
+
+}
+
+.box{
+    background-color: #d6ddd8;
+    padding: 10px;
+    color: #557571;
+    text-align: center;
+}
+
+.box.box2{
+
+    grid-template-columns: repeat(2, 3fr); /*aca hice la union de las celdas para que me quede una sola*/
+
+}
+
+.box.box5{
+    grid-column: 1/span 2; /*le digo que el elemento 5 que empieza en 1 se expanda hasta 3*/
+    background-color:#557571;
+    color: #ffffff;
+}
+
+.box.box2 > button.boton{
+    background-color:#557571;
+    color: #ffffff;
+}
