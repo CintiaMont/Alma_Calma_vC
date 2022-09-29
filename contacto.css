@@ -1,0 +1,51 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+
+button {
+    background-color:#557571;
+    color: #ffffff;
+	font-size: 16px;
+}
+fieldset{
+    border-color: transparent;
+}
+form{
+    background-color: #d6ddd8;
+    padding: 10px;
+    color: #557571;
+    text-align: center;
+    width: 80%;
+}
+
+input{
+    width: 90%;
+}
+
+textarea{
+    width: 90%;
+    height: 150px;
+}
+
+select{
+    width: 90%;
+}
+
+
+.box{
+    background-color: #d6ddd8;
+    padding: 10px;
+    color: #557571;
+    text-align: center;
+}
+
+.box.box5{
+    background-color:#557571;
+    color: #ffffff;
+}
+
+.box.box2 > button.boton{
+    background-color:#557571;
+    color: #ffffff;
+}
