@@ -7,18 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="diseño_astrologia.css">
-    <title>Layout de Sitio Web con CSS GRID</title>
+    <script src="https://kit.fontawesome.com/bee1188257.js" crossorigin="anonymous"></script>
+    <script defer src="menu_movil.js"></script>
+    <title>Astrologia</title>
 </head>
 
 <body>
     <div class="contenedor">
         <header class="header">
             <h2> Alma Calma </font></h2>
-            <button class="boton">Home</button>
-            <button class="boton">Yoga</button>
-            <button class="boton">Astrología</button>
-            <button class="boton">Nosotras</button>
-            <button class="boton">Contacto</button>
+            <nav class="nav">
+                <button class="nav_toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav_menu">
+                    <li class="nav_item">
+                        <a href="" class="nav_link">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="" class="nav_link">Yoga</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="" class="nav_link">Astrologia</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="" class="nav_link">Nosotras</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="" class="nav_link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <main class="contenido">
             <h1>Astrología</h1><br>
@@ -103,10 +122,6 @@
                 <br>Piscis: La Luna y La Sota de Copas.
             </p>
         </main>
-        <aside class="sidebar">
-            <div><h3 class="under">Cursos</h3></div>
-            <div><h3 class="under">Talleres</h3></div>
-        </aside>
         <footer class="footer">
             <p>Copyright 2022 Calma Alma All Rights Reserved</p>
         </footer>
