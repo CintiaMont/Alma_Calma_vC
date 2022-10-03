@@ -85,9 +85,15 @@ h3.under {
 }
 
 @media screen and (max-width: 480px) {
+	.contenedor .header{
+		font-size: 10px;
+	}
 	.contenedor .contenido {
 		display: grid;
 		grid-template-columns: 1fr;
+	}
+	.contenedor .footer{
+		font-size: 10px;
 	}
 }
 
