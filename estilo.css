@@ -35,6 +35,19 @@ body {
 	grid-area: header;
 }
 
+img.alinear_texto_centro{
+	vertical-align: middle;
+  }
+
+p.alinear_con_imagen{
+	display: inline-block;
+	vertical-align: middle;
+	color: #3E5151;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 125%;
+}
+
 .contenedor .contenido {
     display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -96,4 +109,5 @@ h3.under {
 		font-size: 10px;
 	}
 }
+
 
