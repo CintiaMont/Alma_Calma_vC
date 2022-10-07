@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4856169e29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="patrondisenio.css">
+
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class = "contenedor">
+        <header id= "idheader" class="header">
+          
+    </header>
+    <main class="contenido">
+        <form class="box">
+            <h3>Deja tu mensaje</h3>
+            <h4>Contáctate con nosotras</h4>
+
+            <fieldset>
+                <i class="fa-solid fa-user"></i>
+                <input id="name" placeholder="Nombre" type="text" name="name" required />
+            </fieldset>
+
+            <fieldset>
+                <i class="fa-solid fa-filter"></i>
+                <select name="categoria" id="categoria">
+                    <option value="">--Por favor elija una opción--</option>
+                    <option value="Yoga">Yoga</option>
+                    <option value="Astrología">Astrología</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <i class="fa-solid fa-phone"></i> 
+                <input data-testid="phone" id="phone" placeholder="Número de teléfono" type="tel" name="phone"
+                    required />
+            </fieldset>
+
+            <fieldset>
+                <i class="fa-solid fa-envelope"></i>
+                <input data-testid="email" id="email" placeholder="Email" type="email" name="email" required />
+            </fieldset>
+
+            <fieldset>
+                <i class="fa-solid fa-message"></i>
+                <textarea data-testid="message" id="message" placeholder="Escriba su mensaje aquí...."
+                    name="message"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <button class = "boton" type="submit" name="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+
+    </main>
+    
+            
+    <footer id ="idfooter" class="footer">
+
+        
+    </footer>
+    </div>
+    <script src="app.js" ></script>
+        
+ </body>
+
+</html>
