@@ -16,6 +16,55 @@ img {
 	display: grid;
 }
 
+.curso_imagen{
+	max-width: 400px;
+	max-height: 400px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.saber_mas{
+	width: 400px;
+	height: 400px;
+	background: rgba(0,0, 0, 0.7);
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	color:#ffffff;
+	opacity: 0;
+}
+
+.contenedor .contenido .curso_imagen:hover .saber_mas{
+	filter: blur(2px);
+	filter: contrast(150%);
+	filter: brightness(.5);
+	opacity: 1;
+}
+
+p.texto_curso{
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	font-size: 20px;
+}
+
+table.tabla{
+	height: 10%;
+	width: 50%;
+	background: #DECBA4;
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+
+th.principales{
+	background:rgb(189, 165, 117);
+}
+
 img.alinear_texto_centro{
 	vertical-align: middle;
 	max-width: 100%;
@@ -101,10 +150,10 @@ p.alinear_con_imagen{
 	margin-left: 12%;
 	background: #8a9c8a;
 	color: #fff;
-	grid-area: contenido;
 	padding: 5%;
 	align-items: center;
 	justify-content: center;
+	grid-area: contenido;
 }
 
 .contenedor .footer {
@@ -134,8 +183,8 @@ h3.under {
 	display: none;
 }
 
-ul{
-	list-style-image: url(estrella.png);
+ul.lista_astro{
+	list-style-image: url(lista_icono.png);
 }
 
 @media screen and (max-width: 480px) {
