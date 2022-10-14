@@ -146,9 +146,10 @@ p.alinear_con_imagen{
 }
 
 .contenedor .contenido {
-	margin-right: 10%;
-	margin-left: 10%;
-	background: #ffffff;
+	margin-right: 14%;
+	margin-left: 14%;
+	padding: 5%;
+	background: #eef3f4;
 	color: #fff;
 	align-items: center;
 	justify-content: center;
