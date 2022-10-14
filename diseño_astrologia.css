@@ -146,11 +146,10 @@ p.alinear_con_imagen{
 }
 
 .contenedor .contenido {
-	margin-right: 12%;
-	margin-left: 12%;
-	background: #8a9c8a;
+	margin-right: 10%;
+	margin-left: 10%;
+	background: #ffffff;
 	color: #fff;
-	padding: 5%;
 	align-items: center;
 	justify-content: center;
 	grid-area: contenido;
@@ -185,6 +184,22 @@ h3.under {
 
 ul.lista_astro{
 	list-style-image: url(lista_icono.png);
+	list-style-position: inside;
+}
+
+.box{
+	background: #8a9c8a;
+	background-repeat: no-repeat;
+  	background-position: 120px 1em;
+	padding: 25px;
+	margin-bottom: 15px;
+	border: 2px solid #bdc3c7;
+	border-radius: 22px;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3), 0 7px 21px 0 rgba(0,0,0,0.2);
+	align-items: center;
+	align-content: center;
+	text-align-last: center;
+
 }
 
 @media screen and (max-width: 480px) {
