@@ -1,30 +1,28 @@
-
 function esValidoNombre(nombre) {
     return /^[a-zA-Z_ ]+$/.test(nombre);
 }
 
-function esValidoEmail(email) {
-    return /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(email);
-}
+function validarEmail(email) {
+    let regexEmail= /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-/*document.getElementById('email').addEventListener('input', function () {
-    let inputEmail = document.getElementById('email');
-
-    emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-    if (!esValidoEmail(inputEmail.value)) {
-        alert('Ingrese un mail valido');
-        inputEmail.value = '';
+    if (!regexEmail.test(email)){
+     alert("Introduzca una dirección de mail valida.");
     }
-});*/
+  }
 
 
-document.getElementById('name').addEventListener('input', function () {
+document.getElementById('email').addEventListener('focusout', function (e) {
+    let inputEmail = document.getElementById('email');
+    validarEmail(inputEmail.value)
+})
+
+document.getElementById('name').addEventListener('focusout', function () {
     let inputNombre = document.getElementById('name');
     if (!esValidoNombre(inputNombre.value)) {
         alert('El nombre debe contener solo letras');
-        inputNombre.value = '';
     }
 })
+
 
 let form = document.getElementById('contact');
 
@@ -36,11 +34,11 @@ async function handleSubmit(event) {
     const response = await fetch(this.action, {
         method: this.method,
         body: formulario,
-        headers:{
+        headers: {
             'Accept': 'aplication/json'
         }
     })
-    if(response.ok){
+    if (response.ok) {
         this.reset()
         alert('Gracias por completar el formulario')
     }

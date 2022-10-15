@@ -10,10 +10,75 @@ body {
 	display: grid;
 	min-height: 100vh;
 }
-img {
+img.imagenes_cuerpo{
 	max-width: 50%;
 	max-height: 50%;
 	display: grid;
+}
+
+.curso_imagen{
+	max-width: 400px;
+	max-height: 400px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.saber_mas{
+	width: 400px;
+	height: 400px;
+	background: rgba(0,0, 0, 0.7);
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	color:#ffffff;
+	opacity: 0;
+}
+
+.contenedor .contenido .curso_imagen:hover .saber_mas{
+	filter: blur(2px);
+	filter: contrast(150%);
+	filter: brightness(.5);
+	opacity: 1;
+}
+
+p.texto_curso{
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	font-size: 20px;
+}
+
+table.tabla{
+	height: 10%;
+	width: 50%;
+	background: #DECBA4;
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+
+th.principales{
+	background:rgb(189, 165, 117);
+}
+
+img.alinear_texto_centro{
+	vertical-align: middle;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+p.alinear_con_imagen{
+	display: inline-block;
+	position: absolute;
+	left: 70px;
+	color: #3E5151;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 125%;
 }
 
 .contenedor {
@@ -83,12 +148,12 @@ img {
 .contenedor .contenido {
 	margin-right: 14%;
 	margin-left: 14%;
-	background: #8a9c8a;
-	color: #fff;
-	grid-area: contenido;
 	padding: 5%;
+	background: #eef3f4;
+	color: #fff;
 	align-items: center;
 	justify-content: center;
+	grid-area: contenido;
 }
 
 .contenedor .footer {
@@ -116,7 +181,26 @@ h3.under {
 	line-height: 60px;
 	cursor: pointer;
 	display: none;
-  }
+}
+
+ul.lista_astro{
+	list-style-image: url(imagenes/lista_icono.png);
+	list-style-position: inside;
+}
+
+.box{
+	background: #8a9c8a;
+	background-repeat: no-repeat;
+  	background-position: 120px 1em;
+	padding: 25px;
+	margin-bottom: 15px;
+	border: 2px solid #bdc3c7;
+	border-radius: 22px;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3), 0 7px 21px 0 rgba(0,0,0,0.2);
+	align-items: center;
+	align-content: center;
+	text-align-last: center;
+}
 
 @media screen and (max-width: 480px) {
 
@@ -132,7 +216,7 @@ h3.under {
 		flex-direction: column;
 		align-items: center;
 		position: fixed;
-		top: 60px;
+		top: 110px;
 		width: 100%;
 		padding: 20px;
 		overflow-y: auto;
@@ -163,7 +247,7 @@ h3.under {
   }
 
 @media screen and (min-width: 480px) and (max-width: 960px) {
-	
+
 	.contenedor .contenido{
 		margin-right: 10%;
 		margin-left: 10%;
@@ -173,7 +257,7 @@ h3.under {
 		flex-direction: column;
 		align-items: center;
 		position: fixed;
-		top: 60px;
+		top: 110px;
 		width: 100%;
 		padding: 20px;
 		overflow-y: auto;

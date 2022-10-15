@@ -5,61 +5,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contacto.css">
+    <script src="https://kit.fontawesome.com/bee1188257.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="Imagenes/favicon-32x32-fondo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Imagenes/favicon-16x16-fondo.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css?family=Abyssinica SIL" rel="stylesheet">
+    <link rel="stylesheet" href="disenio_contacto.css">
+
     <title>Contacto</title>
 </head>
 
-<body>
-    <main>
-        <div class="box box1">Alma Calma</div>
-        <div class="box box2">
-            <button class="boton">Yoga</button>
-            <button class="boton">Astrología</button>
-            <button class="boton">Nosotras</button>
-            <button class="boton">Contacto</button>
-        </div>
-            <form id="contact" action="https://formspree.io/f/xyyvjgqq"
-            method="POST"
-          >
+<body class="contact">
+    <div class="contenedor">
+        <header id="idheader" class="header">
+        </header>
+        <main>
+
+            <form class="box" id="contact" action="https://formspree.io/f/xyyvjgqq"
+        method="POST">
                 <h3>Deja tu mensaje</h3>
                 <h4>Contáctate con nosotras</h4>
 
-                <fieldset>
-                    <input id="name" placeholder="Nombre" type="text" name="name" required />
+
+                <fieldset class="input-wrapper">
+                    <input class="fa" id="name" placeholder="&#xf007 Ingrese su nombre" type="text" name="name"
+                        minlength="1" maxlength="10" autocomplete="off" style="font-family:Helvetica, FontAwesome"
+                        required />
                 </fieldset>
 
                 <fieldset>
-                    <select name="categoria" id="categoria">
-                        <option value="">--Por favor elija una opción--</option>
+                    <select class="fa" name="categoria" id="categoria" style="font-family:Helvetica, FontAwesome">
+                        <option value=""> &#xf0b0; Por favor elija el motivo de su consulta</option>
                         <option value="Yoga">Yoga</option>
                         <option value="Astrología">Astrología</option>
                     </select>
                 </fieldset>
 
                 <fieldset>
-                    <input data-testid="phone" id="phone" placeholder="Número de teléfono" type="tel" name="phone"
-                        required />
+                    <input class="fa" id="phone" placeholder="&#xf095 Número de teléfono" type="tel" name="phone"
+                        style="font-family:Helvetica, FontAwesome" required />
                 </fieldset>
 
                 <fieldset>
-                    <input data-testid="email" id="email" placeholder="Email" type="email" name="email" required />
+                    <input class="fa" id="email" placeholder="&#xf0e0 Email" type="email" name="email"
+                        style="font-family:Helvetica, FontAwesome" autocomplete="off" minlength="1" required />
                 </fieldset>
 
                 <fieldset>
-                    <textarea data-testid="message" id="message" placeholder="Escriba su mensaje aquí...."
-                        name="message"></textarea>
+                    <textarea class="fa" id="message" placeholder="&#xf27a Escriba su mensaje aquí...."
+                        style="font-family:Helvetica, FontAwesome" name="message"></textarea>
                 </fieldset>
 
                 <fieldset>
-                    <button type="submit" name="submit">Enviar</button>
+                    <button class="boton" type="submit" name="submit">Enviar</button>
                 </fieldset>
             </form>
+            <br>
+            <h2>Nuestra ubicación</h2>
+            <br>
             <div>
-                <h2>Ubicación</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8459965833104!2d-58.37246648512274!3d-34.60805558045835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses!2sar!4v1664389150934!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8459965833104!2d-58.37246648512274!3d-34.60805558045835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses!2sar!4v1664389150934!5m2!1ses!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-    </main>
-    <footer class="box box5">2022 Tritech Todos los derechos reservados</footer>
- </body>
- <script src="contacto.js"></script>
+        </main>
+
+
+
+        <footer id="idfooter" class="footer">
+
+
+        </footer>
+    </div>
+    <script src="app.js"></script>
+    <script src="menu_movil.js"></script>
+    <script src="contacto.js"></script>
+
+</body>
+
 </html>
