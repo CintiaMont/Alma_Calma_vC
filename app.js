@@ -27,7 +27,6 @@ var navegacion = `
 
 `
 
-
 document.getElementById("idheader").innerHTML = navegacion;
 
 var piePagina = `
@@ -42,4 +41,3 @@ var piePagina = `
 
 `
 document.getElementById("idfooter").innerHTML = piePagina;
-

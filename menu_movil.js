@@ -10,4 +10,3 @@ navToggle.addEventListener("click", () => {
     navToggle.setAttribute("aria-label", "Abrir menú");
   }
 });
-
